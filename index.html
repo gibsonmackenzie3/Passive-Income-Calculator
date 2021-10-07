@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passive Income Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.crowdstreet.com/" target="_blank"><img src="./LOGO__Horiz_whit.png" alt=""></a>
+        <h1>Passive Income Calculation</h1>
+        <h2>Calculate the interest you can earn on your investment and visualize how you can receive payments as an investor.</h2>
+    </header>
+    <div class="container">
+        <div class="scales">
+            <div id="left">
+                <h3>Select average rate</h3>
+                <p><span id="avgrate"></span>%</p>
+                <div class="slidecontainer">
+                    <input type="range" min="3" max="25" value="14" class="slider1" id="myRange1">
+                </div>
+            </div>
+            <div id="middle">
+                <h3>Select average duration</h3>
+                <p><span id="avgdur"></span> Years</p>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+                </div>
+            </div>
+            <div id="right">
+                <h3>Select annual investment amount</h3>
+                <p>$<span id="avgdollar"></span></p>
+                <div class="slidecontainer">
+                    <input type="range" min="25000" max="250000" value="137500" class="slider3" id="myRange3">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="interest">
+                <h3>Interest Payments</h3>
+                <p><b>Try it yourself and tell us what you think!</b></p>
+                <p><u>EASY CALCULATION:</u> ((Average rate / 100) * Annual investment amount) * Average duration</p>
+                <!-- <p><b>Total over 24-months period</p></b>
+                <p>$<span id="intpayments"></span></p> -->
+            </div>
+        </div>
+        <footer>
+            <p><em>CrowdStreet, Inc. (“CrowdStreet”) is not a registered broker-dealer, investment advisor or crowdfunding portal. CrowdStreet does not endorse any of the opportunities that appear on this website (the “CrowdStreet Marketplace”), nor does it make any recommendations regarding the appropriateness of particular opportunities for any investor.  Investment opportunities on the CrowdStreet Marketplace are speculative and involve substantial risk. You should not invest unless you can sustain the risk of loss of capital, including the risk of total loss of capital.CrowdStreet Advisors, LLC (“CrowdStreet Advisors”) is a wholly-owned subsidiary of CrowdStreet and a federally registered investment advisor (CRD# 299176). CrowdStreet Advisors provides investment advisory services exclusively to privately managed accounts and private fund clients, and does not otherwise provide investment advisory services to the CrowdStreet Marketplace. For more information, read our Disclosures & Disclaimers** and Terms of Use.</em></p>
+        </footer>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
